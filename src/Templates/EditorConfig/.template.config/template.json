@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Hexagrams Inc.",
+  "classifications": ["Config"],
+  "name": "Hexagrams editorconfig file",
+  "description": "An editorconfig file outlining Hexagrams's preferred C# code style.",
+  "groupIdentity": "Hexagrams.Templates.EditorConfig",
+  "identity": "Hexagrams.Templates.EditorConfig.CSharp.6.0",
+  "shortName": "Hexagrams-editorconfig",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  }
+}
