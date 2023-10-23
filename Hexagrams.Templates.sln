@@ -3,20 +3,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagrams.Templates", "src\Hexagrams.Templates.csproj", "{1A5692C2-D13B-4388-B9F8-380793A2920A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagrams.Templates", "src\Hexagrams.Templates.csproj", "{1A5692C2-D13B-4388-B9F8-380793A2920A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{E31F3CFE-A78F-4CBD-9CFA-73E6103E2B42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5C15550F-C0B5-440A-9BDE-A33203B523DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1A5692C2-D13B-4388-B9F8-380793A2920A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1A5692C2-D13B-4388-B9F8-380793A2920A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A5692C2-D13B-4388-B9F8-380793A2920A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A5692C2-D13B-4388-B9F8-380793A2920A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E31F3CFE-A78F-4CBD-9CFA-73E6103E2B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E31F3CFE-A78F-4CBD-9CFA-73E6103E2B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1A5692C2-D13B-4388-B9F8-380793A2920A} = {5C15550F-C0B5-440A-9BDE-A33203B523DC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65CF954B-66D4-4D2E-9B99-CB3FC4BED9DC}
 	EndGlobalSection
 EndGlobal
