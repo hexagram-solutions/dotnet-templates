@@ -5,7 +5,7 @@
   "name": "Hexagrams GitVersion configuration file",
   "description": "An GitVersion config file for release flow development",
   "groupIdentity": "Hexagrams.Templates.GitVersion",
-  "identity": "Hexagrams.Templates.GitVersion.6.0",
+  "identity": "Hexagrams.Templates.GitVersion.7.0",
   "shortName": "Hexagrams-gitversion",
   "tags": {
     "type": "item"
