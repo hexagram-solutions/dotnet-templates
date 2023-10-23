@@ -6,7 +6,7 @@
   "description": "An .gitattributes file for use in .NET repositories",
   "groupIdentity": "Hexagrams.Templates.GitAttributes",
   "identity": "Hexagrams.Templates.GitAttributes.CSharp.7.0",
-  "shortName": "Hexagrams-gitattributes",
+  "shortName": "hexagrams-gitattributes",
   "tags": {
     "language": "C#",
     "type": "item"
