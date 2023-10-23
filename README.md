@@ -14,10 +14,10 @@ Read more about `dotnet new` and project templates
 [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new).
 
 Once installed, the templates can be used just like any other `dotnet new`
-template. For example, to create a new service project, run this command:
+template. For example, to create a new *.editorconfig* file, run this command:
 
 ```powershell
-dotnet new hexagrams-restapi --name Company.Project.Api
+dotnet new hexagrams-editorconfig
 ```
 
 Templates can be updated with `dotnet new --update-apply`.
