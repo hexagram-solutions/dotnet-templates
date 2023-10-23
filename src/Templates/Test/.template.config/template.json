@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Hexagrams Inc.",
+  "classifications": ["Test", "Service", "xUnit"],
+  "name": "Hexagrams Unit Test Project",
+  "groupIdentity": "Hexagrams.Templates.Test",
+  "identity": "Hexagrams.Templates.Test.CSharp.7.0",
+  "shortName": "hexagrams-test",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "Hexagrams.Service1.Tests",
+  "preferNameDirectory": true,
+  "postActions": [
+    {
+      "id": "restore",
+      "condition": "(!skipRestore)",
+      "description": "Restore NuGet packages required by this project.",
+      "manualInstructions": [
+        {
+          "text": "Run 'dotnet restore'"
+        }
+      ],
+      "actionId": "33fe9fc9-3428-4c1d-a9dc-370c556f2e74",
+      "continueOnError": true
+    }
+  ]
+}
