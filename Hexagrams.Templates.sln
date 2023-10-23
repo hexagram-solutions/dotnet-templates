@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.cspr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5C15550F-C0B5-440A-9BDE-A33203B523DC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{F67411A9-44FC-4DF7-A42C-C5DCF163796B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagrams.Service1.Tests", "src\Templates\Test\Hexagrams.Service1.Tests.csproj", "{632A861E-727C-4F5E-8F4C-0BE573CC89B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,12 +25,18 @@ Global
 		{1A5692C2-D13B-4388-B9F8-380793A2920A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E31F3CFE-A78F-4CBD-9CFA-73E6103E2B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E31F3CFE-A78F-4CBD-9CFA-73E6103E2B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{632A861E-727C-4F5E-8F4C-0BE573CC89B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{632A861E-727C-4F5E-8F4C-0BE573CC89B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{632A861E-727C-4F5E-8F4C-0BE573CC89B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{632A861E-727C-4F5E-8F4C-0BE573CC89B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1A5692C2-D13B-4388-B9F8-380793A2920A} = {5C15550F-C0B5-440A-9BDE-A33203B523DC}
+		{F67411A9-44FC-4DF7-A42C-C5DCF163796B} = {5C15550F-C0B5-440A-9BDE-A33203B523DC}
+		{632A861E-727C-4F5E-8F4C-0BE573CC89B5} = {F67411A9-44FC-4DF7-A42C-C5DCF163796B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {65CF954B-66D4-4D2E-9B99-CB3FC4BED9DC}
