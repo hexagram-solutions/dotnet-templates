@@ -7,7 +7,7 @@ Project templates for use with `dotnet new`.
 Templates can be installed as a nuget package with the command:
 
 ```powershell
-dotnet new --install Hexagrams.Templates
+dotnet new install Hexagrams.Templates
 ```
 
 Read more about `dotnet new` and project templates
@@ -20,7 +20,7 @@ template. For example, to create a new *.editorconfig* file, run this command:
 dotnet new hexagrams-editorconfig
 ```
 
-Templates can be updated with `dotnet new --update-apply`.
+Templates can be updated with `dotnet new update`.
 
 ## Adding New Templates
 
