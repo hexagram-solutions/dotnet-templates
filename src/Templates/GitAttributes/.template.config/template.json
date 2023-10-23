@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Hexagrams Inc.",
+  "classifications": ["Config"],
+  "name": "Hexagrams .gitattributes file",
+  "description": "An .gitattributes file for use in .NET repositories",
+  "groupIdentity": "Hexagrams.Templates.GitAttributes",
+  "identity": "Hexagrams.Templates.GitAttributes.CSharp.6.0",
+  "shortName": "Hexagrams-gitattributes",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  }
+}
