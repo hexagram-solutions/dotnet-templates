@@ -4,7 +4,7 @@
   "classifications": ["Test", "Service", "xUnit"],
   "name": "Hexagrams Unit Test Project",
   "groupIdentity": "Hexagrams.Templates.Test",
-  "identity": "Hexagrams.Templates.Test.CSharp.7.0",
+  "identity": "Hexagrams.Templates.Test.CSharp.8.0",
   "shortName": "hexagrams-test",
   "tags": {
     "language": "C#",

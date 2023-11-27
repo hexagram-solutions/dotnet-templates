@@ -5,7 +5,7 @@
   "name": "Hexagrams editorconfig file",
   "description": "An editorconfig file outlining Hexagrams's preferred C# code style.",
   "groupIdentity": "Hexagrams.Templates.EditorConfig",
-  "identity": "Hexagrams.Templates.EditorConfig.CSharp.7.0",
+  "identity": "Hexagrams.Templates.EditorConfig.CSharp.8.0",
   "shortName": "hexagrams-editorconfig",
   "tags": {
     "language": "C#",

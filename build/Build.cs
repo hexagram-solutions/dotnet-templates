@@ -41,26 +41,26 @@ partial class Build : NukeBuild,
 
     public bool RunFormatAnalyzers => true;
 
-    Target ICompile.Compile => _ => _
+    Target ICompile.Compile => t => t
         .Inherit<ICompile>()
         .DependsOn<IFormat>(x => x.VerifyFormat);
 
-    Configure<DotNetPublishSettings> ICompile.PublishSettings => _ => _
-        .When(!ScheduledTargets.Contains(((IPush) this).Push), _ => _
+    Configure<DotNetPublishSettings> ICompile.PublishSettings => t => t
+        .When(!ScheduledTargets.Contains(((IPush) this).Push), s => s
             .ClearProperties());
 
     Project TemplatesProject => Solution.GetAllProjects("Hexagrams.Templates").Single();
 
-    Configure<DotNetPackSettings> IPack.PackSettings => _ => _
+    Configure<DotNetPackSettings> IPack.PackSettings => t => t
         .SetProject(TemplatesProject);
 
-    Target IPush.Push => _ => _
+    Target IPush.Push => t => t
         .Inherit<IPush>()
         .Consumes(this.FromComponent<IPack>().Pack)
         .Requires(() => this.FromComponent<IHasGitRepository>().GitRepository.Tags.Any())
         .WhenSkipped(DependencyBehavior.Execute);
 
-    Target Install => _ => _
+    Target Install => t => t
         .Description("Tests template package installation by building and re-installing the package locally.")
         .DependsOn<IPack>()
         .Executes(() =>
