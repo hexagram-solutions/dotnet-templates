@@ -69,7 +69,7 @@ partial class Build : NukeBuild,
             var version = this.FromComponent<IHasVersioning>().Versioning.NuGetVersionV2;
             var packagePath = this.FromComponent<IPack>().PackagesDirectory / $"{packageName}.{version}.nupkg";
 
-            SuppressErrors(() => DotNet($"new --uninstall {packageName}"));
-            DotNet($"new --install {packagePath}");
+            SuppressErrors(() => DotNet($"new uninstall {packageName}"));
+            DotNet($"new install {packagePath}");
         });
 }
