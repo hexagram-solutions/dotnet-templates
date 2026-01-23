@@ -3,10 +3,11 @@
   "isRoot": true,
   "tools": {
     "nuke.globaltool": {
-      "version": "7.0.6",
+      "version": "10.1.0",
       "commands": [
         "nuke"
-      ]
+      ],
+      "rollForward": false
     }
   }
 }

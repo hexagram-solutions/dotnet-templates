@@ -37,7 +37,7 @@ partial class Build : NukeBuild,
     readonly Solution Solution;
     Solution IHasSolution.Solution => Solution;
 
-    public IEnumerable<AbsolutePath> ExcludedFormatPaths => Enumerable.Empty<AbsolutePath>();
+    public IEnumerable<AbsolutePath> ExcludedFormatPaths => [];
 
     public bool RunFormatAnalyzers => true;
 
@@ -46,7 +46,7 @@ partial class Build : NukeBuild,
         .DependsOn<IFormat>(x => x.VerifyFormat);
 
     Configure<DotNetPublishSettings> ICompile.PublishSettings => t => t
-        .When(!ScheduledTargets.Contains(((IPush) this).Push), s => s
+        .When(_ => !ScheduledTargets.Contains(((IPush) this).Push), s => s
             .ClearProperties());
 
     Project TemplatesProject => Solution.GetAllProjects("Hexagrams.Templates").Single();
@@ -66,7 +66,7 @@ partial class Build : NukeBuild,
         .Executes(() =>
         {
             var packageName = TemplatesProject.Name;
-            var version = this.FromComponent<IHasVersioning>().Versioning.NuGetVersionV2;
+            var version = this.FromComponent<IHasVersioning>().Versioning.SemVer;
             var packagePath = this.FromComponent<IPack>().PackagesDirectory / $"{packageName}.{version}.nupkg";
 
             SuppressErrors(() => DotNet($"new uninstall {packageName}"));

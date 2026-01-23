@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Hexagrams.Templates.csproj" />
+  </Folder>
+  <Folder Name="/src/Templates/">
+    <Project Path="src/Templates/Test/Hexagrams.Service1.Tests.csproj" />
+  </Folder>
+  <Project Path="build/_build.csproj">
+    <Build Project="false" />
+  </Project>
+</Solution>
