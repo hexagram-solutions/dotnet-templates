@@ -46,7 +46,7 @@ partial class Build : NukeBuild,
         .DependsOn<IFormat>(x => x.VerifyFormat);
 
     Configure<DotNetPublishSettings> ICompile.PublishSettings => t => t
-        .When(!ScheduledTargets.Contains(((IPush) this).Push), s => s
+        .When(_ => !ScheduledTargets.Contains(((IPush) this).Push), s => s
             .ClearProperties());
 
     Project TemplatesProject => Solution.GetAllProjects("Hexagrams.Templates").Single();
