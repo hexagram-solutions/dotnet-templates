@@ -66,7 +66,7 @@ partial class Build : NukeBuild,
         .Executes(() =>
         {
             var packageName = TemplatesProject.Name;
-            var version = this.FromComponent<IHasVersioning>().Versioning.NuGetVersionV2;
+            var version = this.FromComponent<IHasVersioning>().Versioning.SemVer;
             var packagePath = this.FromComponent<IPack>().PackagesDirectory / $"{packageName}.{version}.nupkg";
 
             SuppressErrors(() => DotNet($"new uninstall {packageName}"));
